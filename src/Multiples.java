@@ -4,6 +4,12 @@
 public class Multiples {
 
     public boolean multipleOfThreeOrFive(int number) {
-        return number % 3 == 0;
+        if(number % 3 == 0){
+            return true;
+        }if(number % 5 == 0){
+            return true;
+        }else
+            return false;
     }
 }
+

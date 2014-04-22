@@ -8,8 +8,20 @@ import static junit.framework.Assert.assertEquals;
 public class MultiplesTest {
 
     @Test
-    public void shouldCheckIfANumberIsMultipleOf3(){
+    public void testIfANumberIsMultipleOf3() {
         Multiples multiples = new Multiples();
         assertEquals(true, multiples.multipleOfThreeOrFive(3) );
+    }
+
+    @Test
+    public void testIfANumberIsNotMultipleOf3() {
+        Multiples multiples = new Multiples();
+        assertEquals(false, multiples.multipleOfThreeOrFive(2));
+    }
+
+    @Test
+    public void testIfANumberIsMultipleOf5() {
+        Multiples multiples = new Multiples();
+        assertEquals(true, multiples.multipleOfThreeOrFive(5));
     }
 }
