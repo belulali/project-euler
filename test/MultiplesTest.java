@@ -10,18 +10,24 @@ public class MultiplesTest {
     @Test
     public void testIfANumberIsMultipleOf3() {
         Multiples multiples = new Multiples();
-        assertEquals(true, multiples.multipleOfThreeOrFive(3) );
-    }
-
-    @Test
-    public void testIfANumberIsNotMultipleOf3() {
-        Multiples multiples = new Multiples();
-        assertEquals(false, multiples.multipleOfThreeOrFive(2));
+        assertEquals(true, multiples.isMultipleOfThreeOrFive(3) );
     }
 
     @Test
     public void testIfANumberIsMultipleOf5() {
         Multiples multiples = new Multiples();
-        assertEquals(true, multiples.multipleOfThreeOrFive(5));
+        assertEquals(true, multiples.isMultipleOfThreeOrFive(5));
+    }
+
+    @Test
+    public void testIfANumberIsNotMultipleOf3Or5() {
+        Multiples multiples = new Multiples();
+        assertEquals(false, multiples.isMultipleOfThreeOrFive(2));
+    }
+
+    @Test
+    public void testWhatNumbersFrom1to5AreMultiplesOfThree() throws Exception {
+        Multiples multiples = new Multiples();
+        assertEquals(23, multiples.sumMultipleNumbersOfThreeAndFive(10));
     }
 }
