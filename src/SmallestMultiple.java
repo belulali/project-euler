@@ -4,12 +4,20 @@
 public class SmallestMultiple {
     public int get(int number) {
         int i;
-        for(i = 1; i <= number; i++){
-            if(i % number == 0){
-                System.out.println(i);
+        int x = 1;
+        boolean isDivisible = false;
+        while (!isDivisible) {
+
+            for (i = 1; i <= number; i++) {
+                isDivisible = x % i == 0;
+                if(!isDivisible){
+                    break;
+                }
             }
-            break;
+            if (!isDivisible) {
+                x++;
+            }
         }
-        return i;
+        return x;
     }
 }

@@ -6,5 +6,7 @@ public class Main {
 
         Multiples multiples = new Multiples();
         System.out.println(multiples.sumMultipleNumbersOfThreeAndFive(1000));
+
+
     }
 }

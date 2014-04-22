@@ -13,4 +13,16 @@ public class SmallestMultipleTest {
         SmallestMultiple smallestMultiple = new SmallestMultiple();
         assertEquals(1, smallestMultiple.get(1));
     }
+
+    @Test
+    public void shouldBeTwoWhenUpToTwo(){
+        SmallestMultiple smallestMultiple = new SmallestMultiple();
+        assertEquals(2, smallestMultiple.get(2));
+    }
+
+    @Test
+    public void shouldBeSixWhenUpToThree(){
+        SmallestMultiple smallestMultiple = new SmallestMultiple();
+        assertEquals(6, smallestMultiple.get(3));
+    }
 }
