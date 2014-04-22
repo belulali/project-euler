@@ -18,7 +18,7 @@ public class Multiples {
     public int sumMultipleNumbersOfThreeAndFive(int number) {
         int sumOfNumbers = 0;
         int i;
-        for(i = 1; i < number; i = i + 1){
+        for(i = 1; i < number; i++){
             if(isMultipleOfThreeOrFive(i)){
                sumOfNumbers = sumOfNumbers + i;
             }
