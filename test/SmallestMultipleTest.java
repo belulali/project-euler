@@ -25,4 +25,10 @@ public class SmallestMultipleTest {
         SmallestMultiple smallestMultiple = new SmallestMultiple();
         assertEquals(6, smallestMultiple.get(3));
     }
+
+    @Test
+    public void sixShouldBeDivisibleByThree(){
+        SmallestMultiple smallestMultiple = new SmallestMultiple();
+        assertEquals(true, smallestMultiple.isDivisibleBy(6, 3));
+    }
 }

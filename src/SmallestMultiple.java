@@ -3,21 +3,28 @@
  */
 public class SmallestMultiple {
     public int get(int number) {
-        int i;
-        int x = 1;
+        int smallesDivisibleNumber = 1;
         boolean isDivisible = false;
-        while (!isDivisible) {
 
-            for (i = 1; i <= number; i++) {
-                isDivisible = x % i == 0;
+        while (!isDivisible) {
+            for (int i = 1; i <= number; i++) {
+                isDivisible = isDivisibleBy(smallesDivisibleNumber, i);
                 if(!isDivisible){
                     break;
                 }
             }
             if (!isDivisible) {
-                x++;
+                smallesDivisibleNumber++;
             }
         }
-        return x;
+        return smallesDivisibleNumber;
     }
+
+    public boolean isDivisibleBy(int dividend, int divisor) {
+        if(dividend % divisor == 0){
+        return true;
+        }
+        return false;
+    }
+
 }

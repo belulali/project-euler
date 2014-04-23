@@ -7,6 +7,7 @@ public class Main {
         Multiples multiples = new Multiples();
         System.out.println(multiples.sumMultipleNumbersOfThreeAndFive(1000));
 
-
+        SmallestMultiple smallestMultiple = new SmallestMultiple();
+        System.out.println(smallestMultiple.get(10));
     }
 }
