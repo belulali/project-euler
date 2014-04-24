@@ -8,6 +8,12 @@ public class Main {
         System.out.println(multiples.sumMultipleNumbersOfThreeAndFive(1000));
 
         SmallestMultiple smallestMultiple = new SmallestMultiple();
-        System.out.println(smallestMultiple.get(10));
+        System.out.println(smallestMultiple.get(20));
+
+        FibonacciNumbers fibonacciNumbers = new FibonacciNumbers();
+        System.out.println(fibonacciNumbers.sumEvenFibonacciNumbers(4000000));
+
+        SumSquare sumSquare = new SumSquare();
+        System.out.println(sumSquare.difference(100));
     }
 }
